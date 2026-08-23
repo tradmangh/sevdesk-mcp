@@ -1,7 +1,7 @@
 #!/bin/sh
 exec supergateway \
   --stdio "npx @honeyfield/sevdesk-mcp" \
-  --outputTransport streamableHttp \
+  --outputTransport sse \
   --port 8000 \
   --host 0.0.0.0 \
   --cors \
