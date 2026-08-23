@@ -1,6 +1,6 @@
 #!/bin/sh
 exec supergateway \
-  --stdio "node /app/build/index.js" \
+  --stdio "npx @honeyfield/sevdesk-mcp" \
   --outputTransport streamableHttp \
   --port 8000 \
   --host 0.0.0.0 \
