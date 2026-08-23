@@ -1,7 +1,7 @@
 #!/bin/sh
 exec supergateway \
   --stdio "sevdesk-mcp" \
-  --outputTransport sse \
+  --outputTransport streamableHttp \
   --port 8000 \
   --host 0.0.0.0 \
   --cors \
