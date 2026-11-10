@@ -1,6 +1,7 @@
 FROM node:24-slim
 
-RUN npm install -g supergateway @honeyfield/sevdesk-mcp
+# Pinned: supergateway >=4 is required for --apiKey / SUPERGATEWAY_API_KEY.
+RUN npm install -g supergateway@4.2.2 @honeyfield/sevdesk-mcp@1.2.6
 
 WORKDIR /app
 
